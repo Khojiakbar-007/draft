@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useEffect } from "react";
+
+import Form from "./components/form.component";
+import Info from "./components/info.component";
+import Counter from "./components/counter.component";
+
+import Debounce from "./components/homework/debounce.component";
+import Nimadir from "./components/dars-2/nimadir.component";
+
+import "./App.css";
 
 function App() {
+  // useEffect() {
+  // }
+  // setTimeout(function () {
+  //   console.log("2 seconds");
+  // }, 2000);
+  // setTimeout(function () {
+  //   console.log("4 seconds");
+  // }, 4000);
+  // setTimeout(function () {
+  //   console.log("6 seconds");
+  // }, 6000);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Something
+      {/* <Counter /> */}
+      {/* <Form /> */}
+      {/* <Info /> */}
+      {/* <Debounce /> */}
+      <Nimadir />
     </div>
   );
-}
+} 
 
 export default App;
